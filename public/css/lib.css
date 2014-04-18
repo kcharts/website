@@ -1,0 +1,237 @@
+.kc-lib {
+    padding-top: 48px;
+    background: url('http://img03.taobaocdn.com/tps/i3/T1YXWgFcVbXXcCXlfb-25-25.png') repeat;
+}
+
+.kc-lib .inner {
+    width: 1000px;
+    margin: 0px auto;
+    padding-bottom: 80px;
+}
+
+.kc-lib .inner .siderbar {
+    width: 208px;
+    float: left;
+    overflow: hidden;
+    background: #d3d3d3;
+}
+
+.kc-lib .inner .siderbar li {
+    background: #fff;
+    display: block;
+    width: 206px;
+    height: 42px;
+    line-height: 42px;
+    text-indent: 20px;
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.kc-lib .inner .siderbar .banner {
+    height: 49px;
+    line-height: 49px;
+    font-size: 24px;
+    color: #75b5d6;
+    text-indent: 0px;
+    text-align: center;
+    background: url('http://img02.taobaocdn.com/tps/i2/T14OihFehaXXcwPQA.-1-49.png') repeat-x;
+}
+
+.kc-lib .inner .siderbar li a {
+    color: #666;
+    text-decoration: none;
+    display: block;
+    height: 42px;
+    font-style: normal;
+}
+
+.kc-lib .inner .siderbar li a i {
+    display: block;
+    float: right;
+    width: 42px;
+    height: 42px;
+}
+
+.kc-lib .inner .siderbar li a:hover, .kc-lib .inner .siderbar li.cur a {
+    font-weight: bold;
+    background: #75b5d6;
+    color: #fff;
+}
+
+.kc-lib .inner .siderbar li a.linechart i {
+    background: url('s.png') no-repeat 0 -108px;
+}
+
+.kc-lib .inner .siderbar li a.linechart:hover i, .kc-lib .inner .siderbar .cur a.linechart i {
+    background-position: -111px -108px;
+}
+
+.kc-lib .inner .siderbar li a.barchart i {
+    background: url('s.png') no-repeat 0 7px;
+}
+
+.kc-lib .inner .siderbar li a.barchart:hover i ,.kc-lib .inner .siderbar .cur a.barchart i{
+    background-position: -113px 7px;
+}
+
+.kc-lib .inner .siderbar li a.piechart i {
+    background: url('s.png') no-repeat 0 -171px;
+}
+
+.kc-lib .inner .siderbar li a.piechart:hover i ,.kc-lib .inner .siderbar .cur a.piechart i{
+    background-position: -112px -171px;
+}
+
+.kc-lib .inner .siderbar li a.scatterchart i {
+    background: url('s.png') no-repeat -51px -50px;
+}
+
+.kc-lib .inner .siderbar li a.scatterchart:hover i,.kc-lib .inner .siderbar .cur a.scatterchart i {
+    background-position: -158px -50px;
+}
+
+.kc-lib .inner .siderbar li a.dashboard i {
+    background: url('s.png') no-repeat -51px -227px;
+}
+.kc-lib .inner .siderbar li a.dashboard:hover i {
+	background-position:-157px -227px	
+}
+
+.kc-lib .inner .siderbar li a.mapchart i {
+    background: url('s.png') no-repeat 2px -276px;
+}
+
+.kc-lib .inner .siderbar li a.mapchart:hover i,.kc-lib .inner .siderbar .cur a.mapchart i {
+    background-position: -50px -276px;
+}
+
+.kc-lib .inner .siderbar li a.sumdetailchart i {
+    background: url('s.png') no-repeat 2px -222px;
+}
+
+.kc-lib .inner .siderbar li a.sumdetailchart:hover i,.kc-lib .inner .siderbar .cur a.sumdetailchart i {
+    background-position: -110px -222px;
+}
+
+.kc-lib .inner .siderbar li a.radarchart i {
+    background: url('s.png') no-repeat -52px -108px;
+}
+
+.kc-lib .inner .siderbar li a.radarchart:hover i,.kc-lib .inner .siderbar .cur a.radarchart i {
+    background-position: -158px -108px;
+}
+
+.kc-lib .inner .siderbar li a.timeline i {
+    background: url('s.png') no-repeat -54px -177px;
+}
+
+.kc-lib .inner .sidercontent {
+    float: right;
+}
+
+.kc-lib .inner .btn-container {
+    float: left;
+}
+
+.kc-lib .inner .btn-container .btn, .kc-lib .inner .btn-container .btn {
+    margin: 10px auto;
+    display: inline-block;
+    width: 150px;
+    height: 38px;
+    line-height: 38px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #444;
+    font-size: 16px;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webket-border-radius: 3px 3px 3px 3px;
+}
+
+.kc-lib .inner .btn-container .btn-blue {
+    background: #52a3cc;
+    border-color: #3e8cb3;
+    color: #fff;
+}
+
+.kc-lib .inner .btn-container .btn:hover {
+    text-decoration: none;
+    background: #ebebeb;
+    border-color: #aaa;
+}
+
+.kc-lib .inner .btn-container .btn-blue:hover {
+    text-decoration: none;
+    background-color: #75b6d7;
+    border-color: #65a4c3;
+}
+
+.kc-lib .inner .demo-container {
+    width: 750px;
+    border: 1px solid #ccc;
+    height: 330px;
+    overflow: hidden;
+}
+
+.kc-lib .inner .demo-container .open-new {
+    position: absolute;
+    z-index: 9999;
+    color: #444;
+    margin: 5px 0px 0px 680px;
+    color: #999;
+}
+
+.
+.kc-lib .inner .demo-container .open-new:hover {
+    color: #f60;
+}
+
+.kc-lib .inner .demo-container .chart-container {
+    width: 750px;
+}
+
+.kc-lib .inner .demo-container .chart-container iframe {
+    width: 750px;
+    margin-top: 28px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.kc-lib .inner .demo-container .prev, .kc-lib .inner .demo-container .next {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+}
+
+.kc-lib .inner .demo-container .prev {
+    margin: 0px 0px 0px 0px;
+}
+
+.kc-lib .inner .demo-container .next {
+    margin-left: 700px;
+}
+
+.kc-lib .inner .demo-container .ks-switchable-nav {
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.kc-lib .inner .demo-container .ks-switchable-nav li {
+    display: inline;
+    padding: 5px 10px;
+    border: 1px solid #f7f7f7;
+    color: #666;
+    cursor: pointer;
+    margin: 2px;
+    font-style: normal;
+}
+
+.kc-lib .inner .demo-container .ks-switchable-nav .ks-active {
+    background: #75b5d6;
+    color: #fff;
+}

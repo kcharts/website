@@ -1,0 +1,40 @@
+.kc-doc{
+	width:1000px;
+	margin:0px auto;
+}
+.kc-doc .sidebar{
+	width:190px;
+	float: left;
+	border:1px solid #ccc;
+	margin:10px 0px;
+	position: fixed;
+	background: #f7f7f7;
+}
+.kc-doc .sidebar ul li{
+	display: block;
+	width:180px;
+	margin:0px auto;
+}
+.kc-doc .sidebar ul li{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #eee;
+}
+.kc-doc .sidebar ul li a{
+	color:#666;
+	font-family: Microsoft Yahei;
+	font-size: 14px;
+	display: block;
+	padding: 3px;
+}
+.kc-doc .sidebar ul li a:hover{
+	color:#74aed2;
+	text-decoration: none;
+	font-style: italic;
+}
+.kc-doc iframe{
+	width:800px;
+	min-height: 1000px;
+	float: right;
+	margin: 10px 0px;
+	border:1px solid #ccc;
+}

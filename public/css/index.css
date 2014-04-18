@@ -1,0 +1,809 @@
+body {
+    background: url("http://img03.taobaocdn.com/tps/i3/T1YXWgFcVbXXcCXlfb-25-25.png");
+}
+.kc-header-wrapper{
+    height: 78px;
+    width: 100%;
+}
+.kc-header {
+    height: 78px;
+    font-family: Microsoft Yahei;
+    border-bottom: 1px solid #ccc;
+    -moz-box-shadow: 0px 0px 3px #ccc;
+    -webkit-box-shadow: 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 3px #ccc;
+    position: fixed;
+    z-index: 999;
+    background: url('http://img03.taobaocdn.com/tps/i3/T1YXWgFcVbXXcCXlfb-25-25.png') repeat;
+    width: 100%;
+}
+
+.kc-header .inner {
+    width: 1000px;
+    height: 78px;
+    margin: 0px auto;
+    background: url('http://img01.taobaocdn.com/tps/i1/T1np1gFktbXXXr6JI6-109-50.png') no-repeat 0px 13px;
+}
+
+.kc-header .inner .nav {
+    margin: 0px 0px 0px 200px;
+    padding-top: 20px;
+    position: relative;
+    height: 40px;
+}
+
+.kc-header .inner .nav li {
+    float: left;
+    text-align: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.kc-header .inner .nav li a {
+    display: inline-block;
+    height: 40px;
+    height: 40px;
+    color: #000;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+}
+
+.kc-header .inner .nav li a:hover, .kc-header .inner .nav li.cur a:hover {
+    color: #74aed2
+}
+
+.kc-header .inner .nav li.cur {
+    /*border-bottom: 3px solid #74aed2;*/
+}
+
+.kc-header .inner .nav li.cur a {
+    color: #000;
+}
+
+.kc-header .inner .nav li.box {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    border-bottom: 3px solid #74aed2;
+    z-index: 1;
+    padding: 0;
+
+}
+
+.kc-header .inner .nav-right {
+    float: right;
+    position: static;
+}
+
+.tab-nav {
+    position: absolute;
+    margin: 495px 0px 0px 45%;
+    width: 70px;
+    height: 22px;
+    z-index: 100;
+}
+
+.tab-nav li {
+    display: block;
+    float: left;
+    width: 23px;
+    height: 22px;
+    background: url('http://img04.taobaocdn.com/tps/i4/T1dAmVXx4cXXXjO9De-40-18.png') no-repeat -19px 0px;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tab-nav li.selected {
+    background: url('http://img04.taobaocdn.com/tps/i4/T1dAmVXx4cXXXjO9De-40-18.png') no-repeat 2px 0px;
+}
+
+.tab-nav li.current {
+    background: url('http://img04.taobaocdn.com/tps/i4/T1dAmVXx4cXXXjO9De-40-18.png') no-repeat 2px 0px;
+}
+
+.slide-style {
+    position: relative;
+    overflow: hidden;
+    height: 540px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.slides-container {
+    width: 1000px;
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tab-content .tab-pannel span {
+    width: 1000px;
+    height: 540px;
+    display: inline-block;
+}
+
+.tab-content .tab-pannel .t1 {
+    background: url("http://gtms03.alicdn.com/tps/i3/T1V6iHFkdbXXXHQFok-1100-641.png");
+    background-size: 1000px 540px;
+}
+
+.tab-content .tab-pannel .t2 {
+    background: url("http://gtms04.alicdn.com/tps/i4/T16yKHFm4cXXXHQFok-1100-641.png");
+    background-size: 1000px 540px;
+}
+
+.tab-content .tab-pannel .t3 {
+    background: url("http://gtms02.alicdn.com/tps/i2/T1e5OqFf4hXXXHQFok-1100-641.png");
+    background-size: 1000px 540px;
+}
+
+@media (min-width: 1280px) {
+    .slide-style {
+        position: relative;
+        overflow: hidden;
+        height: 540px;
+        width: 1265px;
+        margin: 0 auto;
+    }
+
+    .slides-container {
+        width: 1265px;
+        height: 540px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .tab-content .tab-pannel span {
+        width: 1265px;
+        height: 540px;
+        display: inline-block;
+    }
+
+    .tab-content .tab-pannel .t1 {
+        background: url("http://img03.taobaocdn.com/tps/i3/T1bvKWXBhXXXa_hgjH-1500-641.png");
+        background-size: 1265px 540px;
+    }
+
+    .tab-content .tab-pannel .t2 {
+        background: url("http://img02.taobaocdn.com/tps/i2/T1t3R_FcdfXXa_hgjH-1500-641.png");
+        background-size: 1265px 540px;
+    }
+
+    .tab-content .tab-pannel .t3 {
+        background: url("http://img03.taobaocdn.com/tps/i3/T1b6GUXwXfXXa_hgjH-1500-641.png");
+        background-size: 1265px 540px;
+    }
+}
+
+.tab-content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+
+.tab-content .tab-pannel {
+    float: none;
+}
+
+.kc-menubar {
+    background: #fff;
+    height: 78px;
+}
+
+.kc-menubar .inner {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.kc-menubar .inner ul li {
+    display: block;
+    float: left;
+    width: 250px;
+    background: url('http://img03.taobaocdn.com/tps/i3/T1nMJ7XvhcXXXeCKDX-15-15.png') no-repeat center 14px;
+}
+
+.kc-menubar .inner ul li a {
+    display: block;
+    width: 250px;
+    height: 70px;
+    line-height: 70px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    font-family: Microsoft Yahei;
+    color: #666;
+    font-size: 14px;
+}
+
+.kc-menubar .inner .hide-content {
+    width: 228px;
+    height: 289px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    position: absolute;
+    z-index: -1;
+    background: #fff;
+    padding: 10px;
+    font-family: Microsoft Yahei;
+    color: #666;
+    opacity: 0;
+}
+
+.kc-menubar .inner .hide-content h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.kc-menubar .inner .hide-content p {
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.color1 {
+    border-top: 8px solid #e4c195;
+}
+
+.color2 {
+    border-top: 8px solid #bcd1a0;
+}
+
+.color3 {
+    border-top: 8px solid #88c5dd;
+}
+
+.color4 {
+    border-top: 8px solid #dabed0;
+}
+
+.kc-main-content {
+    padding-bottom: 40px;
+    background: url('http://img03.taobaocdn.com/tps/i3/T1YXWgFcVbXXcCXlfb-25-25.png') repeat;
+}
+
+.kc-main-content .inner {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.kc-main-content .inner h1 {
+    font-size: 24px;
+    font-family: Microsoft Yahei;
+    color: #000;
+    font-weight: normal;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+.kc-main-content .inner h6 {
+    color: #666;
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.bd-outer {
+    border: 5px solid #ebebeb;
+}
+
+.bd-inner {
+    border: 1px solid #d3d3d3;
+}
+
+.bd-outer, .bd-inner {
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webket-border-radius: 3px 3px 3px 3px;
+}
+
+.kc-main-content .inner .preview-bd {
+    width: 917px;
+    margin: 20px auto 0px;
+}
+
+.kc-main-content .inner .preview {
+    width: 915px;
+    height: 371px;
+    display: block;
+    border-radius: 3px 3px 3px 3px;
+    background: #fff;
+}
+
+.kc-main-content .inner .preview iframe {
+    border: none;
+}
+
+.kc-main-content .inner .chart-list {
+    height: 130px;
+    width: 1000px;
+    overflow: hidden;
+    text-align: center;
+    margin-left: -40px;
+}
+
+.kc-main-content .inner .chart-list .scrollable {
+    height: 130px;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content {
+    overflow: hidden;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-nav {
+    display: none;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .chart-icon {
+    width: 130px;
+    height: 130px;
+    border-right: 1px solid #ccc;
+    margin-right: 1px;
+}
+
+kc-main-content .inner .chart-list .last {
+    margin: 0;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content a {
+    width: 130px;
+    height: 130px;
+    display: block;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .linechart a {
+    background: url('http://img03.taobaocdn.com/tps/i3/T1bGmkXphhXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .linechart a:hover, .kc-main-content .inner .chart-list .ks-switchable-content .linechart .cur {
+    background: url('http://img01.taobaocdn.com/tps/i1/T1dl1mFXRdXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .barchart a {
+    background: url('http://img01.taobaocdn.com/tps/i1/T1pR1kXuXeXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .barchart a:hover, .kc-main-content .inner .chart-list .ks-switchable-content .barchart .cur {
+    background: url('http://img02.taobaocdn.com/tps/i2/T1hw5nFg0cXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .piechart a {
+    background: url('http://img01.taobaocdn.com/tps/i1/T1IjmkXsheXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .piechart a:hover, .kc-main-content .inner .chart-list .ks-switchable-content .piechart .cur {
+    background: url('http://img04.taobaocdn.com/tps/i4/T1U1WpFaVaXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .dashboard a {
+    background: url('http://img01.taobaocdn.com/tps/i1/T1lsWkXuXgXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .dashboard a:hover, .kc-main-content .inner .chart-list .ks-switchable-content .dashboard .cur {
+    background: url('http://img04.taobaocdn.com/tps/i4/T1cb5lFnNgXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .scatterchart a {
+    background: url('http://img03.taobaocdn.com/tps/i3/T1Wt1kXpJfXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .scatterchart a:hover, .kc-main-content .inner .chart-list .ks-switchable-content .scatterchart .cur {
+    background: url('http://img02.taobaocdn.com/tps/i2/T1WTOlFc8fXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .ratiochart a {
+    background: url('http://img02.taobaocdn.com/tps/i2/T1SxylXE0bXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .ratiochart a:hover, .kc-main-content .inner .chart-list .ks-switchable-content .ratiochart .cur {
+    background: url('http://img03.taobaocdn.com/tps/i3/T13rCpFoJXXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .mapchart a {
+    background: url('http://img01.taobaocdn.com/tps/i1/T1rRajXv8gXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .mapchart a:hover, .kc-main-content .inner .chart-list .ks-switchable-content .mapchart .cur {
+    background: url('http://img01.taobaocdn.com/tps/i1/T1_p5nFlpcXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .radarchart a {
+    background: url('http://gtms03.alicdn.com/tps/i3/T1ntaNFlFaXXckL6Z0-130-130.png') no-repeat;
+}
+
+.kc-main-content .inner .chart-list .ks-switchable-content .radarchart a:hover, .kc-main-content .inner .chart-list .ks-switchable-content .radarchart .cur {
+    background: url('http://gtms04.alicdn.com/tps/i4/T1aCCNFdxaXXckL6Z0-130-130.png') no-repeat;
+}
+
+
+
+.kc-banner .b-prev, .kc-banner .b-next {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 40px;
+    height: 50px;
+    z-index: 100;
+
+}
+
+.kc-banner .b-prev {
+    left: 50px;
+    top: 230px;
+}
+
+.kc-banner .b-next {
+    right: 50px;
+    top: 230px;
+}
+
+.kc-banner .b-prev i, .kc-banner .b-next i {
+    background: url("http://img04.taobaocdn.com/tps/i4/T147yoFjRdXXbdvUoh-180-321.png") no-repeat 0 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.kc-banner .b-next i {
+    background-position: -138px 0;
+}
+
+.kc-banner .b-prev:hover i {
+    background-position: 0 -148px;
+}
+
+.kc-banner .b-next:hover i {
+    background-position: -138px -148px;
+}
+
+.kc-banner .disable {
+    cursor: not-allowed;
+}
+
+.kc-banner .disable .p, .kc-banner .disable:hover .p {
+    background-position: 0 -270px;
+}
+
+.kc-banner .disable .n, .kc-banner .disable:hover .n {
+    background-position: -138px -270px;
+}
+
+.kc-main-content .inner .chart-list .prev, .kc-main-content .inner .chart-list .next {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 130px;
+    z-index: 1;
+    font-size: 40px;
+    line-height: 115px;
+    font-family: arial;
+    cursor: pointer;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-left: -7px;
+}
+
+.kc-main-content .inner .chart-list .prev {
+    background: url('http://gtms04.alicdn.com/tps/i4/T14Z1tFiphXXXwQTje-40-82.png') no-repeat 0px 24px;
+}
+
+.kc-main-content .inner .chart-list .prev:hover {
+    background: url('http://gtms02.alicdn.com/tps/i2/T11OWGFn8cXXXwQTje-40-82.png') no-repeat -3px 25px;
+}
+
+.kc-main-content .inner .chart-list .next {
+    margin-left: 967px;
+    background: url('http://gtms03.alicdn.com/tps/i3/T15dCFFhNfXXXwQTje-40-82.png') no-repeat 0px 24px;
+}
+
+.kc-main-content .inner .chart-list .next:hover {
+    margin-left: 967px;
+    background: url('http://gtms01.alicdn.com/tps/i1/T18I9EFotfXXXwQTje-40-82.png') no-repeat 0px 25px;
+}
+
+.kc-main-content .see-all {
+    display: block;
+    text-align: right;
+    padding-bottom: 10px;
+    position: absolute;
+    margin: -29px 0px 0px 859px;
+    font-family: Microsoft Yahei;
+    text-decoration: none;
+    font-size: 14px;
+    color: #666;
+}
+
+.kc-main-content .see-all:hover {
+    color: #74aed2;
+}
+
+.kc-main-content .inner .chart-list .scroller {
+    width: 920px;
+    margin-left: 40px;
+    overflow: hidden;
+    height: 130px;
+}
+
+.kc-apps-center {
+    background: #52a3cc;
+}
+
+.kc-apps-center .inner {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.kc-apps-center .inner h1 {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: Microsoft Yahei;
+    color: #fff;
+    line-height: 76px;
+    text-align: center;
+}
+
+.kc-apps-center .inner .wrapper {
+}
+
+.kc-apps-center .inner .wrapper ul {
+    width: 1025px;
+    margin-left: -25px;
+}
+
+.kc-apps-center .inner .wrapper ul li {
+    display: block;
+    float: left;
+    width: 176px;
+    height: 80px;
+    margin: 10px 0px 0px 25px;
+}
+
+.kc-apps-center .inner .wrapper ul li img {
+    width: 176px;
+    height: 80px;
+}
+
+.kc-apps-center .contect-wrapper {
+    height: 100px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.kc-apps-center .contect-wrapper .contect-us {
+    width: 141px;
+    height: 29px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url("http://img02.taobaocdn.com/tps/i2/T1H6SfFiXdXXaGK32a-142-34.png") no-repeat 0px -2px;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://img02.taobaocdn.com/tps/i2/T1H6SfFiXdXXaGK32a-142-34.png");
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.kc-apps-center .contect-wrapper .coperation {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 29px;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.kc-apps-center .contect-wrapper {
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+    color: #888;
+}
+
+.kc-bottom-banner {
+    padding-bottom: 122px;
+    background: url('http://img03.taobaocdn.com/tps/i3/T1YXWgFcVbXXcCXlfb-25-25.png') repeat;
+}
+
+.kc-bottom-banner .inner {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.kc-bottom-banner .inner .offer {
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Microsoft Yahei;
+    padding: 60px 0px 26px;
+}
+
+.kc-bottom-banner .inner h1 {
+    height: 144px;
+    line-height: 160px;
+    font-size: 20px;
+    font-family: Microsoft Yahei;
+    color: #666;
+    font-weight: normal;
+    text-align: center;
+}
+
+.kc-bottom-banner .inner .item {
+    width: 417px;
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+}
+
+.kc-bottom-banner .inner .item .bd-inner {
+    padding-bottom: 40px;
+}
+
+.kc-bottom-banner .inner .item h3 {
+    margin: 50px 0px 10px 0px;
+    padding-left: 120px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.kc-bottom-banner .inner .item p {
+    padding: 0px 80px 0px 121px;
+    font-size: 12px;
+}
+
+.kc-bottom-banner .inner .left {
+    float: left;
+    background: #fff url('http://img04.taobaocdn.com/tps/i4/T1W0CnXyFcXXafycnp-82-92.png') no-repeat 30px center;
+}
+
+.kc-bottom-banner .inner .right {
+    float: right;
+    background: #fff url('http://img02.taobaocdn.com/tps/i2/T1UgKmXvXfXXcQvQI8-119-92.png') no-repeat 30px center;
+}
+
+.kc-bottom-banner .inner .right h3 {
+    padding-left: 155px;
+}
+
+.kc-bottom-banner .inner .right p {
+    padding: 0px 80px 0px 156px;
+}
+
+.kc-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.kc-footer .inner {
+    height: 306px;
+    width: 1000px;
+    margin: 0px auto;
+    padding-top: 49px;
+}
+
+.kc-footer .inner .bg-line {
+    border-bottom: 1px solid #484848;
+    position: absolute;
+    height: 20px;
+    width: 1000px;
+}
+
+.kc-footer .inner .type-list {
+    width: 1100px;
+    height: 70px;
+    margin-top: 10px;
+    padding-top: 10px;
+    background: url('http://img01.taobaocdn.com/tps/i1/T1yBCTXBhdXXbs6O2v-999-34.png') no-repeat -5px 0px;
+}
+
+.kc-footer .inner .type-list li {
+    display: block;
+    float: left;
+    width: 91.2px;
+    height: 70px;
+    color: #ccc;
+    font-size: 14px;
+    font-family: Microsoft Yahei;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+.kc-footer .inner .type-list li.linechart {
+    background-position: 8px 0px;
+}
+
+.kc-footer .inner .type-list li.barchart {
+    background-position: -83px 0px;
+}
+
+.kc-footer .inner .type-list li.barchart2 {
+    background-position: -176px 0px;
+}
+
+.kc-footer .inner .type-list li.piechart {
+    background-position: -268px 0px;
+}
+
+.kc-footer .inner .type-list li.grid {
+    background-position: -360px 0px;
+}
+
+.kc-footer .inner .type-list li.sumdetail {
+    background-position: -452px 0px;
+}
+
+.kc-footer .inner .type-list li.scatterchart {
+    background-position: -543px 0px;
+}
+
+.kc-footer .inner .type-list li.radar {
+    background-position: -635px 0px;
+}
+
+.kc-footer .inner .type-list li.timeline {
+    background-position: -727px 0px;
+}
+
+.kc-footer .inner .type-list li.dashboard {
+    background-position: -817px 0px;
+}
+
+.kc-footer .inner .type-list li.mapchart {
+    background-position: -910px 0px;
+}
+
+.kc-footer .inner i {
+    width: 140px;
+    height: 48px;
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    z-index: 1;
+    text-align: center;
+    background: #7f7f7f;
+    background: url('http://img04.taobaocdn.com/tps/i4/T1wASVXtVXXXXlEmbX-140-48.png') no-repeat;
+}
+
+.kc-footer .inner .powerby {
+    color: #666;
+    line-height: 50px;
+    font-family: Microsoft Yahei;
+    display: inline-block;
+    margin-top: 110px;
+}
+.kc-footer .inner .powerby a{
+    color:#666;
+}
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.gen-inframe {
+    width: 100%;
+    border: none;
+    height: 800px;
+}
