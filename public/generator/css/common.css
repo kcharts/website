@@ -1,0 +1,75 @@
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix{ *zoom:1; }
+.scrollStyle::-webkit-scrollbar, .scrollStyle::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+.scrollStyle::-webkit-scrollbar-thumb, .scrollStyle::-webkit-scrollbar-thumb {
+border-radius: 2px;
+background-color: #a1a1a1;
+border-right: 1px solid #fff;
+}
+.main-container{ width:1000px; margin:0px auto;font-family: Microsoft Yahei; }
+.config-panel{ width:264px; overflow: hidden; float: right; background: #fff}
+.config-panel table{ table-layout: fixed; width:100%; }
+.config-panel td{ white-space: nowrap; padding: 2px; }
+.config-panel-inner{height: 673px;overflow: hidden;}
+.sub-attr-name{width: 60px;}
+.attr-name{ position: relative; font-family: Microsoft Yahei; line-height: 34px; background: #f0f0f0; color:#444;text-indent: 10px; border-bottom: 1px solid #fff;}
+.attr-name:hover{background: #dbdbdb;}
+.attr-name-highlight{color:#fff;background: #52a3cc;}
+.attr-detail{padding: 12px 10px;position: relative;}
+.gen-wrapper{padding: 12px 10px;background:  #f7f7f7;-moz-box-shadow:0px 0px 8px #aaa; -webkit-box-shadow:0px 0px 8px #aaa; box-shadow:0px 0px 8px #aaa;position: relative;z-index: 1; }
+.config-panel .large-area{ width:800px; margin:0px auto; height:200px; }
+ .data-area{display: none;}
+ .ks-overlay{background: #fff;z-index: 9999;-moz-box-shadow:0px 0px 8px #aaa; -webkit-box-shadow:0px 0px 8px #aaa; box-shadow:0px 0px 8px #aaa;}
+ .ks-overlay .ks-ext-close-x{position: absolute;right: 10px; top: 10px}
+ .ks-overlay .data-area{display: block;width:700px;height: 340px;margin: 10px auto 7px;overflow: auto;border: 0}
+.ks-dialog-focused{outline: none;}
+.ks-ext-close-x{background: url(http://img04.taobaocdn.com/tps/i4/T1RF1mFdNXXXaKKoA_-11-11.png) no-repeat;display: inline-block;width: 11px;height: 11px;font-size: 0}
+.hide{display: none;}
+.block{display: block;}
+.preview-pane{ float: left;}
+.preview-pane .preview-inner{margin-bottom: 20px;}
+.preview{ width:696px; height:300px;display: block; }
+.banner{ font-size: 20px;color:#444; }
+.main-container .iColorPicker{ width:55px; }
+.nav{ padding:10px 3px 0px; }
+.nav li a,.nav li a:hover{ color:#444; text-decoration: none; }
+.nav .active a,.nav .active a:hover{ color:#fff; }
+.preview{border: none;}
+.bd-outer { border: 5px solid #ebebeb;}
+/*.bd-outer,.ks-overlay{ border:5px solid #ebebeb; }*/
+.bd-inner,.ks-contentbox{ border:1px solid #d3d3d3; }
+.bd-outer,.bd-inner, .ks-overlay,.ks-contentbox{border-radius: 3px 3px 3px 3px;-moz-border-radius: 3px 3px 3px 3px;-webket-border-radius: 3px 3px 3px 3px;}
+.kc-title{background: url('http://img04.taobaocdn.com/tps/i4/T155qhFa8cXXc4v7s.-1-40.png') repeat-x;height: 40px;line-height: 40px;font-family: Microsoft Yahei;color:#000;font-size: 16px;text-indent: 10px;}
+select{font-size: 14px;width:230px;line-height: 30px;height: 30px;}
+.kc-btn{margin: 10px auto;display: block; width: 150px;height: 38px;line-height: 38px;text-decoration: none;text-align: center;border:1px solid #ccc;color:#444;font-size: 16px;border-radius: 3px 3px 3px 3px;-moz-border-radius: 3px 3px 3px 3px;-webket-border-radius: 3px 3px 3px 3px;}
+
+.kc-btn:hover{text-decoration: none;background: #ebebeb;border-color: #aaa;}
+
+.kc-btn-blue{background: #52a3cc;border-color:#3e8cb3;color:#fff;}
+.kc-btn-blue:hover{background-color: #75b6d7;border-color: #65a4c3;}
+.kc-btn-small{font-size: 12px;height: 30px;line-height: 30px;background: #e5e4e4;}
+.scroll-wrapper{overflow-y:scroll;overflow-x:hidden;height: 480px;}
+.btn-more-config-wrapper{text-align: right;padding:0px;}
+.more-config-panel{display: none;}
+.btn-more-config{color:#52a3cc;font-size: 12px;}
+.scroll-x{overflow-x:scroll;}
+.scroll-y{overflow-y:scroll;}
+.triangle{
+  position:absolute;
+  right:11px;
+  top:13px;
+  border:5px solid #586c7c;
+  border-color:#586c7c transparent transparent transparent;
+}
+.triangle.up{
+  border-color:transparent transparent #586c7c transparent;
+  top:7px;
+}
+/*.ks-overlay-mask-shown{
+	background-color:#000;
+	opacity:.4;
+	filter:alpha(opacity=40);
+}*/
