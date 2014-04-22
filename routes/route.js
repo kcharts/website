@@ -13,4 +13,5 @@ module.exports = function(app){
   app.get('/testGet',test.testGet);
   app.post('/testPost',test.testPost);
   app.post('/testJson',test.testJson);
+  app.post('/addTest',test.addTest);
 };

@@ -16,6 +16,12 @@
 	  <input type="submit" value="提交" />
 	</form>	
 
+	<form action="/addTest" method="post">
+	  名称：<input type="text" value="" name="name" /><br/>
+	  年龄：<input type="text" value="" name="age" />
+	  <input type="submit" value="注册提交" />
+	</form>	
+
 	<input type="button" value="异步调用" id="J_asyn"/>
 </body>
 </html>
@@ -23,7 +29,6 @@
 <script type="text/javascript">
  $(function(){
  	$("#J_asyn").click(function(e){
- 		alert('11');
  		var sendData = {name:'jack',age:8};
  		$.ajax({
  		    url :"/testJson",
