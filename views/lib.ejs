@@ -1,43 +1,51 @@
 <% include header%>
-
-<?php
-$chartType = isset($_GET['type']) ? $_GET['type'] : "linechart";
-$exit = $chartType == 'dashboard' || $chartType == 'mapchart' || $chartType == 'sumdetailchart' || $chartType == 'radarchart';
-?>
 <link rel="stylesheet" href="css/lib.css"/>
 <div class="kc-lib">
     <div class="inner clearfix">
         <div class="siderbar bd-outer">
             <ul class="siderbar-inner bd-inner">
                 <li class="banner">图表库</li>
-                <li class="<?php if ($chartType == "linechart") {
-                    echo "cur";
-                } ?>"><a class="sider-menu linechart" href="./lib.php?type=linechart"
+                <li class="
+                <%if(chartType == "linechart"){%>
+                cur
+                <%}%>
+                "><a class="sider-menu linechart" href="/lib?type=linechart"
                          chartType="linechart">折线图<i></i></a></li>
-                <li class="<?php if ($chartType == "barchart") {
-                    echo "cur";
-                } ?>"><a class="sider-menu barchart " href="./lib.php?type=barchart" chartType="barchart">柱状图<i></i></a>
+                <li class="
+                <% if(chartType == "barchart"){%>
+                cur
+                <%}%>
+                "><a class="sider-menu barchart " href="/lib?type=barchart" chartType="barchart">柱状图<i></i></a>
                 </li>
-                <li class="<?php if ($chartType == "piechart") {
-                    echo "cur";
-                } ?>"><a class="sider-menu piechart " href="./lib.php?type=piechart" chartType="piechart">饼图<i></i></a>
+                <li class="
+                <% if(chartType == "piechart"){%>
+                cur
+                <%}%>
+                "><a class="sider-menu piechart " href="/lib?type=piechart" chartType="piechart">饼图<i></i></a>
                 </li>
-                <li class="<?php if ($chartType == "scatterchart") {
-                    echo "cur";
-                } ?>"><a class="sider-menu scatterchart" href="./lib.php?type=scatterchart" chartType="scatterchart">散点图<i></i></a>
+                <li class="
+                <% if(chartType == "scatterchart"){%>
+                cur
+                <%}%>
+                "><a class="sider-menu scatterchart" href="/lib?type=scatterchart" chartType="scatterchart">散点图<i></i></a>
                 </li>
-                <li class="<?php if ($chartType == "dashboard") {
-                    echo "cur";
-                } ?>"><a class="sider-menu dashboard" href="./lib.php?type=dashboard"
+                <li class="
+                <% if(chartType == "dashboard"){%>
+                cur
+                <%}%>
+                "><a class="sider-menu dashboard" href="/lib?type=dashboard"
                          chartType="dashboard">仪表盘<i></i></a></li>
-                <li class="<?php if ($chartType == "mapchart") {
-                    echo "cur";
-                } ?>"><a class="sider-menu mapchart" href="./lib.php?type=mapchart" chartType="mapchart">地图<i></i></a>
+                <li class="
+                <% if(chartType == "mapchart"){%>
+                cur
+                <%}%>
+                "><a class="sider-menu mapchart" href="/lib?type=mapchart" chartType="mapchart">地图<i></i></a>
                 </li>
-                
-                <li class="<?php if ($chartType == "radarchart") {
-                    echo "cur";
-                } ?>"><a class="sider-menu radarchart" href="./lib.php?type=radarchart"
+                <li class="
+                <% if(chartType == "radarchart"){%>
+                cur
+                <%}%>
+                "><a class="sider-menu radarchart" href="/lib?type=radarchart"
                          chartType="radarchart">雷达图<i></i></a></li>
             </ul>
         </div>
@@ -58,9 +66,15 @@ $exit = $chartType == 'dashboard' || $chartType == 'mapchart' || $chartType == '
                 </div>
             </div>
             <div class="btn-container">
-                <?php if (!$exit) {
-                    echo '<a class="btn btn-blue" href="generator.php?type=' . $chartType . '">生成demo及代码</a>';
-                }?>
+                <%if(exit){
+                %>
+                    <a class="btn btn-blue" href="generator.php?type=
+                <%=chartType
+                %>
+                ">生成demo及代码</a>
+                <%
+                }
+                %>
                 <a id="J_Fiddle" class="btn btn-blue" target="_blank" style="margin-left:14px;" href="#">edit in
                     jsbin</a>
                 <a class="btn" target="_blank" style="margin-left:14px;"
@@ -70,7 +84,7 @@ $exit = $chartType == 'dashboard' || $chartType == 'mapchart' || $chartType == '
     </div>
 </div>
 
-<input type="hidden" id="H_chartType" value="<?php echo $chartType; ?>">
+<input type="hidden" id="H_chartType" value="<%=chartType%>">
 
 
 <script type="text/javascript">

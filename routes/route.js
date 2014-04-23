@@ -9,6 +9,8 @@ module.exports = function(app){
     res.render('index',{title:'首页'});
   });
 
+  app.get('/lib',lib.index);
+ 
   app.get('/test',test.test);
   app.get('/testGet',test.testGet);
   app.post('/testPost',test.testPost);
