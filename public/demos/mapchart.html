@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>chinaMap</title>
+    <style type="text/css">
+
+        #demo1 {
+            width: 480px;
+            /*height:371px;*/
+            margin: 0px auto;
+            font-size: 10px;
+            font-family: Microsoft Yahei;
+            -webkit-text-size-adjust: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        #b1 {
+            background-color: #ececec;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<div id="demo1"></div>
+<script src="http://a.tbcdn.cn/??s/kissy/1.3.0/kissy-min.js"></script>
+<script type="text/javascript">
+    (function (S) {
+        $ = KISSY.all;
+        S.Config.debug = true;
+        S.use('gallery/kcharts/1.1/mapchart/index', function (S, MapChart) {
+            var h = screen.availHeight * 0.7;
+            $('#map').css("height", h);
+            var map = new MapChart('#demo1', {
+                themeCls: "ks-chart-default",
+                autoRender: false,
+                tip: {
+                    isShow: false
+                },
+                cssGroup: {
+                    style1: {
+                        attr: {"fill": "#f0efeb", "stroke": "#ccc6ae", 'stroke-opacity': 0.25},
+                        hoverAttr: {"fill": "#f0efeb", "stroke": "#ccc6ae", 'stroke-opacity': 0.25}
+                    },
+                    defaultCls: "style1"
+                },
+                series: {}
+            });
+            map.on('afterRender', function () {
+                var cs = 'city-st',
+                        self = this,
+                        timer,
+                        span = '<span></span>',
+                        tip = $('.node-tip'),
+                        container = '.ks-chart-area-text';
+
+                S.each(allCdnNode, function (item, index) {
+                    var style = self.converPix(item.x, item.y), num = item.data.length;
+                    style = S.merge(style, {
+                        "backgroundSize": [Math.sqrt(num) * 3, "px ", Math.sqrt(num) * 3, "px"].join('')
+                    })
+                    $(span).attr('title', index).addClass(cs).css(style).appendTo(container).on('mouseenter',function (e) {
+                        var tar = this, offset = $(tar).offset();
+                        timer && clearTimeout(timer);
+                        tip.text([index, '有', num, '个CDN节点'].join('')).show().stop().animate({
+                            left: offset.left + 10,
+                            top: offset.top
+                        }, {
+                            duration: 0.3,
+                            easing: 'easeIn'
+                        });
+                    }).on('mouseleave', function () {
+                                timer = setTimeout(function () {
+                                    tip.hide();
+                                }, 2000);
+                            })
+                })
+            })
+            map.render();
+
+        });
+    })(KISSY);
+</script>
+</body>
+</html>
