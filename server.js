@@ -13,52 +13,41 @@ var mongoSore = require('connect-mongo')(express);
 //var settings = require('./settings');
 
 var routes = require('./routes');
-// var users = require('./routes/user');
 
 var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-
-
 // all environments  add glj
 app.set('port', process.env.PORT || 8081);
-
-
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
-
 app.use(express.static(path.join(__dirname, 'public'))); //拒绝直接路径进行访问
-
 app.use(app.router);
 
 app.get('/', routes.index);
 app.get('/index.html', routes.index);
 app.get('/demo.html', routes.demo);
 
-//glj add 
-/*app.use(express.methodOverride());
-app.use(express.cookieParser());
-    app.use(express.session({
-    secret: settings.cookieSecret,
-    key: settings.db,
-    cookie: {maxAge: 1000 * 60 * 60 * 24 * 30},//30 days
-    store: new MongoStore({
-    db: settings.db
-    })
-}));*/
+app.configure('development', function(){
+  app.use(express.errorHandler());
+});
 
+routes(app);//这里执行
 
+//app.get('/lib.html', routes.lib);
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
 });
+
+
 
 /// error handlers
 
@@ -67,8 +56,8 @@ app.use(function(req, res, next) {
 if (app.get('env') === 'development') {
     app.use(function(err, req, res, next) {
         res.render('error', {
-            message: err.message,
-            error: err
+            message: err.message,  //标题 比如not found
+            error: err             //错误信息 404  以及stacktrace 信息打印
         });
     });
 }

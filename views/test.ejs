@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+<body>
+	<h1><%= param %></h1>
+	<h1><%= param1 %></h1>
+	<form action="/testGet" method="get">
+	  参数：<input type="text" value="" name="test" /><br/>
+	  参数2：<input type="text" value="" name="test1" />
+	  <input type="submit" value="提交" />
+	</form>
+
+	<form action="/testPost" method="post">
+	  参数：<input type="text" value="" name="test3" /><br/>
+	  参数2：<input type="text" value="" name="test4" />
+	  <input type="submit" value="提交" />
+	</form>	
+
+	<form action="/addTest" method="post">
+	  名称：<input type="text" value="" name="name" /><br/>
+	  年龄：<input type="text" value="" name="age" />
+	  <input type="submit" value="注册提交" />
+	</form>	
+
+	<input type="button" value="异步调用" id="J_asyn"/>
+</body>
+</html>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+ $(function(){
+ 	$("#J_asyn").click(function(e){
+ 		var sendData = {name:'jack',age:8};
+ 		$.ajax({
+ 		    url :"/testJson",
+ 			type:"post",
+ 			data:sendData,
+ 			success:function(data){
+ 				console.log(data);
+ 			}
+ 		})
+ 	})
+ });
+</script>
