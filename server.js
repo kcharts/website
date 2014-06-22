@@ -9,7 +9,7 @@ var fs = require('fs');
 
 
 //glj add
-//var mongoSore = require('connect-mongo')(express);
+var mongoSore = require('connect-mongo')(express);
 //var settings = require('./settings');
 
 var routes = require('./routes');
@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 
 
 // all environments  add glj
-app.set('port', process.env.PORT || 80);
+app.set('port', process.env.PORT || 8081);
 
 
 app.use(favicon());
@@ -38,7 +38,8 @@ app.use(app.router);
 
 app.get('/', routes.index);
 app.get('/index.html', routes.index);
-app.get('/lib.html', routes.lib);
+app.get('/demo.html', routes.demo);
+
 //glj add 
 /*app.use(express.methodOverride());
 app.use(express.cookieParser());

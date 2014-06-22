@@ -1,0 +1,28 @@
+.sidebar{
+	width:40px; 
+	position: absolute;
+	height: 100%;
+	left: 0;
+}
+.sidebar ul li{
+	display: block;
+	height: 70px;
+	background: #000;
+	color:#fff;
+}
+.sidebar ul li.cur{
+	background: #ccc;
+}
+
+.content{
+	
+}
+
+.content .demo-item{
+	width: 32%;
+	height: 300px;
+	border:1px solid #ccc;
+	box-shadow: 2px 2px 3px #ccc;
+	float: left;
+	margin: 5px;
+}
