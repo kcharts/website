@@ -37,7 +37,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-routes(app);//这里执行
+// routes(app);//这里执行
 
 //app.get('/lib.html', routes.lib);
 /// catch 404 and forwarding to error handler
